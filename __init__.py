@@ -41,9 +41,6 @@ def histogramme():
 def contact():
     return render_template("contact.html")
 
-@app.route('/')
-def hello_world():
-    return render_template('commits.html') #Comm
 
 @app.route("/commits/")
 def commits():
