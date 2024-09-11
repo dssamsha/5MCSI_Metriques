@@ -1,0 +1,79 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Formulaire de Contact</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 20px;
+      }
+
+      .container {
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h2 {
+        text-align: center;
+        color: #333;
+      }
+
+      label {
+        font-weight: bold;
+        margin-bottom: 10px;
+        display: block;
+      }
+
+      input[type="text"],
+      textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+      }
+
+      textarea {
+        height: 100px;
+      }
+
+      button {
+        width: 100%;
+        padding: 10px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+      button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Contactez-nous</h2>
+      <form action="/submit-contact" method="post">
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" placeholder="Votre nom" required />
+
+        <label for="prenom">Prénom :</label>
+        <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" required />
+
+        <label for="message">Message :</label>
+        <textarea id="message" name="message" placeholder="Votre message" required></textarea>
+
+        <button type="submit">Envoyer</button>
+      </form>
+    </div>
+  </body>
+</html>
