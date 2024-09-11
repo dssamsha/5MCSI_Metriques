@@ -11,7 +11,7 @@
 
     <script>
         async function fetchCommits() {
-            const response = await fetch('https://api.github.com/repos/dssamsha/5MCSI_Metriques/commits');
+            const response = await fetch('https://api.github.com/repos/dssamsha/5MCSI_Metriques/commits.html');
             const commits = await response.json();
 
             const minutesCount = Array(60).fill(0);  // Un tableau pour stocker le nombre de commits par minute
